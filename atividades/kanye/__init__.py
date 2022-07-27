@@ -1,5 +1,6 @@
-print('Configurando a cabeça do Kanye...')
-print('Estes prints sempre ocorreção quando a biblioteca kanye importada por outro script Python')
+print('__init__: Configurando a cabeça do Kanye...')
+print('__init__: Estes prints sempre ocorreção quando a biblioteca kanye importada por outro script Python')
+
 
 def configuracao():
-    print('This is My Beautiful Dark Twisted Fantasy')
+    print('__init__/configuracao(): This is My Beautiful Dark Twisted Fantasy')
