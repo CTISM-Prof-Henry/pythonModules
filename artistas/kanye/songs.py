@@ -17,19 +17,20 @@ def get_lyrics(artist, n_songs):
     )
 
     with open("lyrics.json", "w") as some_file:  # File to write lyrics to
-        print(f'Começando o processo de salvar músicas do {artist}...')
+        print(f'songs.py: Começando o processo de salvar músicas do {artist}...')
         some_dict = dict()
 
         try:
             songs = (genius.search_artist(artist, max_songs=n_songs, sort='popularity')).songs
             some_dict[artist] = [song.lyrics for song in songs]
 
-            print(f"Salvei {len(some_dict[artist])} músicas do {artist} no arquivo.")
+            print(f"songs.py: Salvei {len(some_dict[artist])} músicas do {artist} no arquivo.")
         except Exception as e:
-            print(f"Uma exceção ocorreu:\n{e}")
+            print(f"songs.py: Uma exceção ocorreu:\n{e}")
 
         json.dump(some_dict, some_file, indent=2)  # escreve dicionário no arquivo json
 
 
+# esse código só será executado se o usuário explicitamente executar o arquivo songs.py
 if __name__ == '__main__':
     get_lyrics('Kanye West', 3)
