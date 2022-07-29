@@ -1,5 +1,7 @@
 """
-https://github.com/johnwmillr/LyricsGenius
+Este script usa a biblioteca externa https://github.com/johnwmillr/LyricsGenius
+
+Veja a seção Instalação do arquivo README para ver como instalá-la.
 """
 
 import lyricsgenius as lg

@@ -11,8 +11,9 @@ definem o fluxo de entrada e saída de dados de um programa.
 
 * [Diferença entre bibliotecas, módulos e pacotes](#diferena-entre-bibliotecas-mdulos-e-pacotes)
 * [Importando bibliotecas](#importando-bibliotecas)
-* [Definindo módulos e pacotes](#definindo-módulos-e-pacotes)
+* [Definindo módulos e pacotes](capítulos/definindo_módulos_e_pacotes.md)
 * [Instalação](#instalação)
+* [Exercícios](#exercícios)
 
 ## Diferença entre bibliotecas, módulos e pacotes
 
@@ -83,16 +84,22 @@ resposta = seno(60)
 print(resposta)
 ```
 
-## Definindo módulos e pacotes
-
-Em breve.
-
 ## Instalação 
 
 1. Clone este repositório na sua máquina
 2. [Crie um ambiente virtual do anaconda para trabalhar](
    https://github.com/CTISM-Prof-Henry/pythonEssentials/blob/main/chapters/venvs.md#criando-pela-linha-de-comando)
-3. Após ter criado o ambiente virtual e o ativado, instale
+3. Após ter criado o ambiente virtual e ativado-o, instale
    a biblioteca _lyricsgenius_: `pip install lyricsgenius`
 4. Para executar os códigos-fontes, [abra a pasta deste repositório no Pycharm.](
    https://github.com/CTISM-Prof-Henry/pythonEssentials/blob/main/chapters/venvs.md#usando-pelo-pycharm)
+
+## Exercícios
+
+1. Execute o arquivo [artistas/main.py](artistas/main.py). Identifique de qual arquivo cada um dos prints saiu. Por que eles são
+   impressos nesta ordem?
+2. Execute o arquivo [artistas/kanye/\_\_main\_\_.py](artistas/kanye/__main__.py). Por que os prints do arquivo 
+   [artistas/kanye/\_\_init\_\_.py](artistas/kanye/__init__.py) não são impressos na tela?
+3. Execute o arquivo [artistas/kanye/songs.py](artistas/kanye/songs.py). Por que os prints do arquivo 
+   [artistas/kanye/\_\_init\_\_.py](artistas/kanye/__init__.py) não são impressos na tela?
+4. Execute o arquivo [artistas/taylor/\_\_init\_\_.py](artistas/taylor/__init__.py). Por que nada acontece?
