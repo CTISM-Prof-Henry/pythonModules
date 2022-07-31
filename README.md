@@ -1,4 +1,4 @@
-# pythonModules
+# Módulos
 
 Módulos (ou bibliotecas, ou pacotes - mais sobre essa nomenclatura em breve) são um recurso da linguagem Python para 
 organizar código-fonte em unidades bem-organizadas e delimitadas.
